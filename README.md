@@ -1,0 +1,79 @@
+
+# Getting Started with APIMATIC Calculator
+
+## Introduction
+
+Simple calculator API hosted on APIMATIC
+
+## Install the Package
+
+Install the SDK by adding the following dependency in your project's pom.xml file:
+
+```xml
+<dependency>
+  <groupId>io.github.zahran444</groupId>
+  <artifactId>automated-package-publishing-sdk</artifactId>
+  <version>1.0.21</version>
+</dependency>
+```
+
+You can also view the package at:
+https://central.sonatype.com/artifact/io.github.zahran444/automated-package-publishing-sdk/1.0.21
+
+## Initialize the API Client
+
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/client.md)
+
+The following parameters are configurable for the API Client:
+
+| Parameter | Type | Description |
+|  --- | --- | --- |
+| httpClientConfig | [`Consumer<HttpClientConfiguration.Builder>`](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/http-client-configuration-builder.md) | Set up Http Client Configuration instance. |
+
+The API client can be initialized as follows:
+
+```java
+import io.apimatic.examples.APIMATICCalculatorClient;
+import io.apimatic.examples.exceptions.ApiException;
+
+public class Program {
+    public static void main(String[] args) {
+        APIMATICCalculatorClient client = new APIMATICCalculatorClient.Builder()
+            .httpClientConfig(configBuilder -> configBuilder
+                    .timeout(0))
+            .build();
+
+    }
+}
+```
+
+## List of APIs
+
+* [Simple Calculator](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/controllers/simple-calculator.md)
+
+## SDK Infrastructure
+
+### Configuration
+
+* [Configuration Interface](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/configuration-interface.md)
+* [HttpClientConfiguration](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/http-client-configuration.md)
+* [HttpClientConfiguration.Builder](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/http-client-configuration-builder.md)
+* [HttpProxyConfiguration](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/http-proxy-configuration.md)
+* [HttpProxyConfiguration.Builder](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/http-proxy-configuration-builder.md)
+
+### HTTP
+
+* [Headers](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/headers.md)
+* [HttpCallback Interface](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/http-callback-interface.md)
+* [HttpContext](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/http-context.md)
+* [HttpBodyRequest](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/http-body-request.md)
+* [HttpRequest](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/http-request.md)
+* [HttpResponse](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/http-response.md)
+* [HttpStringResponse](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/http-string-response.md)
+
+### Utilities
+
+* [ApiException](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/api-exception.md)
+* [ApiHelper](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/api-helper.md)
+* [FileWrapper](https://www.github.com/WasifMatic/automated-package-publishing-java-sdk/tree/1.0.21/doc/file-wrapper.md)
+
