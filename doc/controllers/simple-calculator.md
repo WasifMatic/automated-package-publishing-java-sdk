@@ -30,6 +30,8 @@ CompletableFuture<Double> calculateAsync(
 
 ## Response Type
 
+**200**
+
 `double`
 
 ## Example Usage
