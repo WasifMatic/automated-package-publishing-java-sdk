@@ -18,7 +18,9 @@ Possible operators are sum, subtract, multiply, divide
 
 ## Example
 
-```
-SUM
+```java
+import io.apimatic.examples.models.OperationTypeEnum;
+
+OperationTypeEnum operationType = OperationTypeEnum.SUM;
 ```
 
