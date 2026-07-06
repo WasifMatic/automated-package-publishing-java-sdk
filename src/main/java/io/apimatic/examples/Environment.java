@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
 
-
 /**
  * Environment to be used.
  */
@@ -21,7 +20,6 @@ public enum Environment {
      * This environment connect to the LIVE calculator API
      */
     PRODUCTION;
-
 
     private static TreeMap<String, Environment> valueMap = new TreeMap<>();
     private String value;

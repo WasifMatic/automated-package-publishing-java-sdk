@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
 
-
 /**
  * OperationTypeEnum to be used.
  */
@@ -24,7 +23,6 @@ public enum OperationTypeEnum {
     MULTIPLY,
 
     DIVIDE;
-
 
     private static TreeMap<String, OperationTypeEnum> valueMap = new TreeMap<>();
     private String value;
